@@ -23,6 +23,7 @@
             <a href="#books" class="nav-link" data-section="books">Books</a>
             <a href="#music" class="nav-link" data-section="music">Music</a>
             <a href="#films" class="nav-link" data-section="films">Films</a>
+            <a href="#gear" class="nav-link" data-section="gear">Gear</a>
         </div>
         <div class="nav-toggle" id="navToggle">
             <span></span>
@@ -36,18 +37,78 @@
         <a href="#books" class="mobile-link">Books</a>
         <a href="#music" class="mobile-link">Music</a>
         <a href="#films" class="mobile-link">Films</a>
+        <a href="#gear" class="mobile-link">Gear</a>
     </div>
 
     <!-- Hero -->
     <section class="hero" id="hero">
-        <div class="hero-content">
-            <div class="hero-tag">Digital Diary</div>
-            <h1 class="hero-title">
-                <span class="hero-line" data-delay="0">Shaun</span>
-                <span class="hero-line hero-outline" data-delay="1">Captures</span>
-                <span class="hero-line" data-delay="2">Moments</span>
-            </h1>
-            <p class="hero-sub">Photographer · Reader · Listener</p>
+        <div class="hero-split">
+            <div class="hero-content">
+                <div class="hero-tag">Digital Diary</div>
+                <h1 class="hero-title">
+                    <span class="hero-line" data-delay="0">Shaun</span>
+                    <span class="hero-line hero-outline" data-delay="1">Captures</span>
+                    <span class="hero-line" data-delay="2">Moments</span>
+                </h1>
+                <p class="hero-sub">Photographer · Reader · Listener</p>
+            </div>
+            <div class="blog-stack" id="blogStack">
+                <div class="blog-stack-label">Journal</div>
+                <div class="blog-entries">
+                    <div class="blog-entry" data-blog="1">
+                        <div class="blog-header">
+                            <span class="blog-date">Feb 2026</span>
+                            <span class="blog-tag">Thoughts</span>
+                        </div>
+                        <h3 class="blog-title">Why I Shoot Film</h3>
+                        <div class="blog-preview">There's something about the wait. The not-knowing. Digital gives you everything instantly...</div>
+                        <div class="blog-full">
+                            <p>There's something about the wait. The not-knowing. Digital gives you everything instantly — and maybe that's the problem. Film forces you to be intentional. Every frame costs money. Every click of the shutter is a commitment.</p>
+                            <p>I started shooting film because I wanted to slow down. I was burning through 500 photos a weekend on my phone and keeping maybe 3. With film, I shoot 36 frames on a roll and keep 30. The ratio flipped.</p>
+                            <p>It's not about nostalgia. It's about discipline. And honestly? The grain, the color, the imperfections — they feel more real than anything a sensor produces.</p>
+                        </div>
+                    </div>
+                    <div class="blog-entry" data-blog="2">
+                        <div class="blog-header">
+                            <span class="blog-date">Jan 2026</span>
+                            <span class="blog-tag">Process</span>
+                        </div>
+                        <h3 class="blog-title">Car Shows & Found Moments</h3>
+                        <div class="blog-preview">Most people go to car shows for the cars. I go for everything around them...</div>
+                        <div class="blog-full">
+                            <p>Most people go to car shows for the cars. I go for everything around them. The rust patterns on a 60-year-old fender. The way light hits chrome at golden hour. The old man who's been polishing the same Buick for 40 years.</p>
+                            <p>Photography taught me to see details. Car shows are a goldmine for that — texture, color, character. Every car has a story, and you can read it in the paint chips and patina.</p>
+                            <p>My favorite shots from shows are never the hero angles. They're the close-ups. The overlooked stuff. That's where the real beauty is.</p>
+                        </div>
+                    </div>
+                    <div class="blog-entry" data-blog="3">
+                        <div class="blog-header">
+                            <span class="blog-date">Dec 2025</span>
+                            <span class="blog-tag">Life</span>
+                        </div>
+                        <h3 class="blog-title">Shooting Family</h3>
+                        <div class="blog-preview">The cookout photos are my favorite ones I've ever taken...</div>
+                        <div class="blog-full">
+                            <p>The cookout photos are my favorite ones I've ever taken. Not because they're technically perfect — they're not. The exposure is off on a few. Some are slightly out of focus.</p>
+                            <p>But they're real. That's my family, in their element, not posing for anything. The food trailer, the folding chairs, the bounce house in the background. That's a Saturday.</p>
+                            <p>I think the best photography isn't about making things look beautiful. It's about showing things as they are and letting the beauty speak for itself.</p>
+                        </div>
+                    </div>
+                    <div class="blog-entry" data-blog="4">
+                        <div class="blog-header">
+                            <span class="blog-date">Nov 2025</span>
+                            <span class="blog-tag">Gear</span>
+                        </div>
+                        <h3 class="blog-title">First Roll</h3>
+                        <div class="blog-preview">I remember picking up my first developed roll. Hands shaking a little...</div>
+                        <div class="blog-full">
+                            <p>I remember picking up my first developed roll. Hands shaking a little. Not because I was nervous — because I genuinely didn't know what I'd captured.</p>
+                            <p>Half the roll was overexposed. A few frames were completely black. But there were maybe 5 or 6 shots that made me stop scrolling through the scans and just stare.</p>
+                            <p>That feeling — that surprise — is what got me hooked. You can't replicate it with digital. The delay between capture and reveal is where the magic lives.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="hero-scroll">
             <span>Scroll</span>
@@ -168,13 +229,6 @@
                     <span class="photo-meta">Family · Landscape</span>
                 </div>
             </div>
-            <div class="photo-item" data-category="landscape" data-aos>
-                <img src="VJphotos/PNG image 15.png" alt="Couple by food trailer, wider angle" loading="lazy">
-                <div class="photo-overlay">
-                    <span class="photo-title">Posted Up II</span>
-                    <span class="photo-meta">Family · Landscape</span>
-                </div>
-            </div>
 
             <!-- PORTRAIT -->
             <div class="photo-item" data-category="portrait" data-aos>
@@ -220,7 +274,7 @@
                 </div>
             </div>
             <div class="photo-item" data-category="portrait" data-aos>
-                <img src="VJphotos/PNG image 22.png" alt="Kid jumping in bounce house" loading="lazy">
+                <img src="VJphotos/PNG image 16.png" alt="Kid jumping in bounce house" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-title">Air Time</span>
                     <span class="photo-meta">Family · Portrait</span>
@@ -429,6 +483,283 @@
                     <span class="film-year">1997</span>
                     <div class="film-stars">★★★½</div>
                     <p class="film-review">"Moving film on love and transformation."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gear -->
+    <section class="section" id="gear">
+        <div class="section-header">
+            <span class="section-number">05</span>
+            <h2 class="section-title">Gear</h2>
+            <p class="section-desc">What I shoot with. The tools behind the work.</p>
+        </div>
+
+        <div class="gear-grid">
+            <!-- FILM CAMERAS -->
+            <div class="gear-category" data-aos>
+                <h3 class="gear-cat-title">Film Cameras</h3>
+                <div class="gear-items">
+                    <div class="gear-item">
+                        <div class="gear-icon">📷</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Leitz CL</h4>
+                            <p class="gear-desc">35mm Rangefinder · Leica M-Mount</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">📷</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Canon A-1</h4>
+                            <p class="gear-desc">35mm SLR · Canon FD Mount</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DIGITAL CAMERAS -->
+            <div class="gear-category" data-aos>
+                <h3 class="gear-cat-title">Digital Cameras</h3>
+                <div class="gear-items">
+                    <div class="gear-item">
+                        <div class="gear-icon">📷</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Nikon D750</h4>
+                            <p class="gear-desc">Full Frame DSLR · 24.3MP</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">📷</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Nikon D90</h4>
+                            <p class="gear-desc">APS-C DSLR · 12.3MP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LENSES -->
+            <div class="gear-category" data-aos>
+                <h3 class="gear-cat-title">Lenses</h3>
+                <div class="gear-items">
+                    <div class="gear-item">
+                        <div class="gear-icon">🔭</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">TTArtisan 28mm f/5.6</h4>
+                            <p class="gear-desc">Leica M-Mount · Leitz CL</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🔭</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Canon FD 50mm f/1.8</h4>
+                            <p class="gear-desc">FD Mount · Canon A-1</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🔭</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Canon FD 28mm f/2.8</h4>
+                            <p class="gear-desc">FD Mount · Canon A-1</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🔭</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">AF-S Nikkor 24-120mm</h4>
+                            <p class="gear-desc">F-Mount · Nikon D750</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🔭</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">AF-S Nikkor 70-300mm</h4>
+                            <p class="gear-desc">F-Mount · Nikon D750</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🔭</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Nikkor 50mm f/1.8</h4>
+                            <p class="gear-desc">F-Mount · D750 / D90</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🔭</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Nikkor 18-105mm</h4>
+                            <p class="gear-desc">DX · Nikon D90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FILM STOCK -->
+            <div class="gear-category" data-aos>
+                <h3 class="gear-cat-title">Film Stock</h3>
+                <div class="gear-items">
+                    <div class="gear-item">
+                        <div class="gear-icon">🎞️</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Fujifilm 400</h4>
+                            <p class="gear-desc">ISO 400 · Color</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🎞️</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Kodak Ultramax 400</h4>
+                            <p class="gear-desc">ISO 400 · Color</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🎞️</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Kodak Ektar 100</h4>
+                            <p class="gear-desc">ISO 100 · Color · Fine Grain</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🎞️</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">CineStill XX</h4>
+                            <p class="gear-desc">ISO 200 · B&W · Double-X</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🎞️</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Kodak Tri-X 400</h4>
+                            <p class="gear-desc">ISO 400 · B&W · Classic</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🎞️</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Ilford HP5 Plus</h4>
+                            <p class="gear-desc">ISO 400 · B&W · Versatile</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMPUTER -->
+            <div class="gear-category" data-aos>
+                <h3 class="gear-cat-title">Computer</h3>
+                <div class="gear-items">
+                    <div class="gear-item">
+                        <div class="gear-icon">🖥️</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Apple Mac Mini M4</h4>
+                            <p class="gear-desc">Desktop · Apple Silicon</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🖥️</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">LG UltraWide 34"</h4>
+                            <p class="gear-desc">Widescreen Monitor</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">⌨️</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Logitech MX Keys Mini</h4>
+                            <p class="gear-desc">Wireless Keyboard</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🖱️</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Logitech MX Vertical</h4>
+                            <p class="gear-desc">Ergonomic Mouse</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">💾</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">LaCie Rugged 2TB</h4>
+                            <p class="gear-desc">External Storage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WANTS -->
+            <div class="gear-category gear-wants" data-aos>
+                <h3 class="gear-cat-title">Wishlist</h3>
+                <div class="gear-items">
+                    <div class="gear-item">
+                        <div class="gear-icon">🎞️</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Leica M6</h4>
+                            <p class="gear-desc">35mm Rangefinder · 28mm Summicron</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🎞️</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Mamiya RB67</h4>
+                            <p class="gear-desc">Medium Format · 6x7</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🎞️</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Contax G2</h4>
+                            <p class="gear-desc">35mm Rangefinder · Carl Zeiss 40mm</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">📷</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Fujifilm X100VI</h4>
+                            <p class="gear-desc">APS-C · 23mm f/2</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">📷</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Fujifilm GFX 100</h4>
+                            <p class="gear-desc">Medium Format Digital · 102MP</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">📷</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">Sony A1 II</h4>
+                            <p class="gear-desc">Full Frame Mirrorless · 50.1MP</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">💻</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">MacBook Pro 14"</h4>
+                            <p class="gear-desc">Apple Silicon · Portable Edit Station</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FUN -->
+            <div class="gear-category" data-aos>
+                <h3 class="gear-cat-title">Fun</h3>
+                <div class="gear-items">
+                    <div class="gear-item">
+                        <div class="gear-icon">🎮</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">PS Vita</h4>
+                            <p class="gear-desc">White/Blue · Jailbroken</p>
+                        </div>
+                    </div>
+                    <div class="gear-item">
+                        <div class="gear-icon">🎵</div>
+                        <div class="gear-details">
+                            <h4 class="gear-name">iPod Classic 5th Gen</h4>
+                            <p class="gear-desc">Jailbroken · Rockbox</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
