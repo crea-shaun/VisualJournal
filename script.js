@@ -156,4 +156,70 @@ staggerElements.forEach(el => {
     staggerObserver.observe(el);
 });
 
+// Blog stack expand/collapse
+document.querySelectorAll('.blog-entry').forEach(entry => {
+    entry.addEventListener('click', () => {
+        // Defender 90 opens notebook modal
+        if (entry.id === 'defenderEntry') {
+            document.getElementById('notebookOverlay').classList.add('open');
+            document.body.style.overflow = 'hidden';
+            return;
+        }
+        const isExpanded = entry.classList.contains('expanded');
+        // Close all
+        document.querySelectorAll('.blog-entry').forEach(e => e.classList.remove('expanded'));
+        // Toggle clicked
+        if (!isExpanded) {
+            entry.classList.add('expanded');
+        }
+    });
+});
+
+// Notebook close
+document.getElementById('notebookClose')?.addEventListener('click', () => {
+    document.getElementById('notebookOverlay').classList.remove('open');
+    document.body.style.overflow = '';
+});
+
+document.getElementById('notebookOverlay')?.addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) {
+        e.currentTarget.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+});
+
+// Infinite horizontal scroll (Netflix-style loop)
+function initInfiniteScroll(selector) {
+    document.querySelectorAll(selector).forEach(container => {
+        const items = Array.from(container.children);
+        if (items.length < 2) return;
+
+        // Clone all items and append for seamless loop
+        items.forEach(item => {
+            const clone = item.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true');
+            container.appendChild(clone);
+        });
+
+        const totalOriginalWidth = items.reduce((w, el) => {
+            const style = getComputedStyle(container);
+            const gap = parseFloat(style.gap) || 0;
+            return w + el.offsetWidth + gap;
+        }, 0);
+
+        container.addEventListener('scroll', () => {
+            if (container.scrollLeft >= totalOriginalWidth) {
+                container.scrollLeft -= totalOriginalWidth;
+            } else if (container.scrollLeft <= 0) {
+                container.scrollLeft += totalOriginalWidth;
+            }
+        });
+    });
+}
+
+initInfiniteScroll('.book-cards');
+initInfiniteScroll('.book-cards-aligned');
+initInfiniteScroll('.music-grid');
+initInfiniteScroll('.film-grid');
+
 console.log('⚡ Visual Journal loaded');
