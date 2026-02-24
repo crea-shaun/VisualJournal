@@ -574,6 +574,41 @@ button { cursor: none; }
     letter-spacing: 0.1em;
 }
 
+/* Spec Grid */
+.spec-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.spec-block h4 {
+    font-family: var(--font-main);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.spec-block ul {
+    list-style: none;
+    padding: 0;
+}
+
+.spec-block li {
+    font-size: 0.8rem;
+    color: #555;
+    padding: 0.25rem 0;
+    line-height: 1.5;
+}
+
+.spec-block li strong {
+    color: #2a2a2a;
+}
+
 /* Budget Table */
 .budget-table {
     width: 100%;
@@ -610,8 +645,36 @@ button { cursor: none; }
 /* Polaroid Grid */
 .polaroid-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.polaroid-scroll {
+    display: flex;
+    gap: 1.2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+.polaroid-scroll::-webkit-scrollbar {
+    height: 4px;
+}
+
+.polaroid-scroll::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.polaroid-scroll .polaroid {
+    min-width: 200px;
+    max-width: 200px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
 }
 
 .polaroid {
@@ -626,10 +689,19 @@ button { cursor: none; }
 .polaroid:nth-child(2) { --rotate: 1.5deg; }
 .polaroid:nth-child(3) { --rotate: -1deg; }
 .polaroid:nth-child(4) { --rotate: 2.5deg; }
+.polaroid:nth-child(5) { --rotate: -1.5deg; }
+.polaroid:nth-child(6) { --rotate: 2deg; }
 
 .polaroid:hover {
     transform: rotate(0deg) scale(1.05);
     z-index: 2;
+}
+
+.polaroid-img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    display: block;
 }
 
 .polaroid-img-placeholder {
@@ -717,10 +789,24 @@ button { cursor: none; }
     font-style: italic;
 }
 
+.build-rules {
+    background: rgba(0,0,0,0.03);
+    border-left: 3px solid #c44;
+    padding: 1rem 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.build-rules p strong {
+    color: #1a1a1a;
+    font-style: normal;
+}
+
 /* Notebook Responsive */
 @media (max-width: 768px) {
     .notebook-page { padding: 2rem 1.5rem 2rem 3rem; }
     .polaroid-grid { grid-template-columns: repeat(2, 1fr); }
+    .polaroid-scroll .polaroid { min-width: 160px; max-width: 160px; }
+    .spec-grid { grid-template-columns: 1fr; }
     .parts-list { grid-template-columns: 1fr; }
     .notebook-title { font-size: 1.6rem; }
 }
